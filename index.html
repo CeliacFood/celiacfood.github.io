@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پروژه فروشگاه مواد غذایی</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> فروشگاه </a>
+
+    <nav class="navbar">
+        <a href="#home">خانه</a>
+        <a href="#features">ویژگی‌ها</a>
+        <a href="#products">محصولات</a>
+        <a href="#categories">دسته‌بندی‌ها</a>
+        <a href="#review">نظرات</a>
+        <a href="#blogs">بلاگ‌ها</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="جستجو...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/cart-img-1.png" alt="">
+            <div class="content">
+                <h3>هندوانه</h3>
+                <span class="price">۴.۹۹ دلار</span>
+                <span class="quantity">تعداد : ۱</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/cart-img-2.png" alt="">
+            <div class="content">
+                <h3>پیاز</h3>
+                <span class="price">۴.۹۹ دلار</span>
+                <span class="quantity">تعداد : ۱</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/cart-img-3.png" alt="">
+            <div class="content">
+                <h3>مرغ</h3>
+                <span class="price">۴.۹۹ دلار</span>
+                <span class="quantity">تعداد : ۱</span>
+            </div>
+        </div>
+        <div class="total"> جمع کل : ۱۹.۶۹ دلار </div>
+        <a href="#" class="btn">تسویه حساب</a>
+    </div>
+
+    <form action="" class="login-form">
+        <h3>ورود</h3>
+        <input type="email" placeholder="ایمیل شما" class="box">
+        <input type="password" placeholder="رمز عبور شما" class="box">
+        <p>رمز عبور را فراموش کرده‌اید؟ <a href="#">اینجا کلیک کنید</a></p>
+        <p>حساب کاربری ندارید؟ <a href="#">همین حالا بسازید</a></p>
+        <input type="submit" value="ورود" class="btn">
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>محصولات <span>تازه و ارگانیک</span> برای شما</h3>
+        <p>ارگانیکا جایی است که نوآوران و علاقه‌مندان به تکنولوژی، محصولات جدید را پیش از ورود به بازار کشف می‌کنند.</p>
+        <a href="#" class="btn">خرید کنید</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- features section starts  -->
+
+<section class="features" id="features">
+
+    <h1 class="heading"> <span>ویژگی‌های</span> ما </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/feature-img-1.png" alt="">
+            <h3>تازه و ارگانیک</h3>
+            <p>سبزیجات و میوه‌های تازه با قیمت مناسب.</p>
+            <a href="#" class="btn">بیشتر بخوانید</a>
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-2.png" alt="">
+            <h3>ارسال رایگان</h3>
+            <p>ما همیشه ارسال سریع برای مشتریان خود داریم.</p>
+            <a href="#" class="btn">بیشتر بخوانید</a>
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-3.png" alt="">
+            <h3>پرداخت آسان</h3>
+            <p>پرداخت در سایت ما بسیار آسان است.</p>
+            <a href="#" class="btn">بیشتر بخوانید</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+
+<!-- products section starts  -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> <span>محصولات</span> ما </h1>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/product-1.png" alt="">
+                <h3>پرتقال تازه</h3>
+                <div class="price"> ۴.۹۹ تا ۱۰.۹۹ دلار </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">افزودن به سبد</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-2.png" alt="">
+                <h3>پیاز تازه</h3>
+                <div class="price"> ۴.۹۹ تا ۱۰.۹۹ دلار </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">افزودن به سبد</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-3.png" alt="">
+                <h3>گوشت تازه</h3>
+                <div class="price"> ۴.۹۹ تا ۱۰.۹۹ دلار </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">افزودن به سبد</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-4.png" alt="">
+                <h3>کلم تازه</h3>
+                <div class="price"> ۴.۹۹ تا ۱۰.۹۹ دلار </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">افزودن به سبد</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/product-5.png" alt="">
+                <h3>سیب‌زمینی تازه</h3>
+                <div class="price"> ۴.۹۹ تا ۱۰.۹۹ دلار </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">افزودن به سبد</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-6.png" alt="">
+                <h3>آووکادوی تازه</h3>
+                <div class="price"> ۴.۹۹ تا ۱۰.۹۹ دلار </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">افزودن به سبد</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-7.png" alt="">
+                <h3>هویج تازه</h3>
+                <div class="price"> ۴.۹۹ تا ۱۰.۹۹ دلار </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">افزودن به سبد</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product-8.png" alt="">
+                <h3>لیمو سبز</h3>
+                <div class="price"> ۴.۹۹ تا ۱۰.۹۹ دلار </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">افزودن به سبد</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+<!-- products section ends -->
+
+<!-- categories section starts  -->
+
+<section class="categories" id="categories">
+
+    <h1 class="heading"> <span>دسته‌بندی‌های</span> محصولات </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/cat-1.png" alt="">
+            <h3>سبزیجات</h3>
+            <p>تا ۴۵٪ تخفیف</p>
+            <a href="#" class="btn">خرید کنید</a>
+        </div>
+
+        <div class="box">
+            <img src="image/cat-2.png" alt="">
+            <h3>میوه تازه</h3>
+            <p>تا ۴۵٪ تخفیف</p>
+            <a href="#" class="btn">خرید کنید</a>
+        </div>
+
+        <div class="box">
+            <img src="image/cat-3.png" alt="">
+            <h3>محصولات لبنی</h3>
+            <p>تا ۴۵٪ تخفیف</p>
+            <a href="#" class="btn">خرید کنید</a>
+        </div>
+
+        <div class="box">
+            <img src="image/cat-4.png" alt="">
+            <h3>گوشت تازه</h3>
+            <p>تا ۴۵٪ تخفیف</p>
+            <a href="#" class="btn">خرید کنید</a>
+        </div>
+
+        <div class="box">
+            <img src="image/product-9.png" alt="">
+            <h3>غذاهای دریایی</h3>
+            <p>تا ۴۵٪ تخفیف</p>
+            <a href="#" class="btn">خرید کنید</a>
+        </div>
+
+        <div class="box">
+            <img src="image/product-10.jpg" alt="">
+            <h3>فست فود</h3>
+            <p>تا ۴۵٪ تخفیف</p>
+            <a href="#" class="btn">خرید کنید</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- categories section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> <span>نظرات</span> مشتریان </h1>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/pic-1.png" alt="">
+                <p>وبسایت بسیار خوبی است. همه چیز عالی است. می‌توانید خرید خود را از اینجا انجام دهید.</p>
+                <h3>جان</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-2.png" alt="">
+                <p>وبسایت بسیار خوبی است. همه چیز عالی است. می‌توانید خرید خود را از اینجا انجام دهید.</p>
+                <h3>جولیانا</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-3.png" alt="">
+                <p>وبسایت بسیار خوبی است. همه چیز عالی است. می‌توانید خرید خود را از اینجا انجام دهید.</p>
+                <h3>جاناتان</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-4.png" alt="">
+                <p>وبسایت بسیار خوبی است. همه چیز عالی است. می‌توانید خرید خود را از اینجا انجام دهید.</p>
+                <h3>اولیویا</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> <span>بلاگ‌های</span> ما </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/blog-1.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> توسط کاربر </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> ۱ مهر ۱۴۰۰ </a>
+                </div>
+                <h3>میوه و سبزیجات تازه و ارگانیک</h3>
+                <p>ارگانیکا جایی است که نوآوران و علاقه‌مندان به تکنولوژی، محصولات جدید را پیش از ورود به بازار کشف می‌کنند.</p>
+                <a href="#" class="btn">بیشتر بخوانید</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/blog-2.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> توسط کاربر </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> ۱ مهر ۱۴۰۰ </a>
+                </div>
+                <h3>میوه و سبزیجات تازه و ارگانیک</h3>
+                <p>ارگانیکا جایی است که نوآوران و علاقه‌مندان به تکنولوژی، محصولات جدید را پیش از ورود به بازار کشف می‌کنند.</p>
+                <a href="#" class="btn">بیشتر بخوانید</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/blog-3.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> توسط کاربر </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> ۱ مهر ۱۴۰۰ </a>
+                </div>
+                <h3>میوه و سبزیجات تازه و ارگانیک</h3>
+                <p>ارگانیکا جایی است که نوآوران و علاقه‌مندان به تکنولوژی، محصولات جدید را پیش از ورود به بازار کشف می‌کنند.</p>
+                <a href="#" class="btn">بیشتر بخوانید</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> فروشگاه <i class="fas fa-shopping-basket"></i> </h3>
+            <p>امیدواریم حال‌تون همیشه خوب باشه و سلامت باشید.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>اطلاعات تماس</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +۹۱ ۸۸۵۳۴۵۵۷۶۵ </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +۹۱ ۹۱۴۰۰۲۶۴۸۴ </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> kapilyadav001144@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> گریتِر نویدا، هند - ۲۰۱۳۰۶ </a>
+        </div>
+
+        <div class="box">
+            <h3>لینک‌های سریع</h3>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> خانه </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> ویژگی‌ها </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> محصولات </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> دسته‌بندی‌ها </a>
+        </div>
+
+        <div class="box">
+            <h3>خبرنامه</h3>
+            <p>برای دریافت آخرین به‌روزرسانی‌ها عضو شوید</p>
+            <input type="email" placeholder="ایمیل شما" class="email">
+            <input type="submit" value="عضویت" class="btn">
+            <img src="image/payment.png" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> ساخته شده توسط <span> Celiac Food </span> | همه حقوق محفوظ است </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
