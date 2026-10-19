@@ -1,84 +1,57 @@
-let searchForm = document.querySelector('.search-form');
+(() => {
+  'use strict';
 
-document.querySelector('#search-btn').onclick = () =>{
-    searchForm.classList.toggle('active');
-    shoppingCart.classList.remove('active');
-    loginForm.classList.remove('active');
-    navbar.classList.remove('active');
-}
+  const header = document.querySelector('.site-header');
+  const toggle = header?.querySelector('.nav-toggle');
+  const navigation = document.getElementById('primary-nav');
 
-let shoppingCart = document.querySelector('.shopping-cart');
+  if (!header || !toggle || !navigation) return;
 
-document.querySelector('#cart-btn').onclick = () =>{
-    shoppingCart.classList.toggle('active');
-    searchForm.classList.remove('active');
-    loginForm.classList.remove('active');
-    navbar.classList.remove('active');
-}
+  const desktop = window.matchMedia('(min-width: 761px)');
+  const isOpen = () => toggle.getAttribute('aria-expanded') === 'true';
 
-let loginForm = document.querySelector('.login-form');
+  function closeNavigation(returnFocus = false) {
+    toggle.setAttribute('aria-expanded', 'false');
+    if (returnFocus) toggle.focus();
+  }
 
-document.querySelector('#login-btn').onclick = () =>{
-    loginForm.classList.toggle('active');
-    searchForm.classList.remove('active');
-    shoppingCart.classList.remove('active');
-    navbar.classList.remove('active');
-}
+  toggle.hidden = false;
+  header.setAttribute('data-nav-enhanced', '');
 
-let navbar = document.querySelector('.navbar');
+  toggle.addEventListener('click', () => {
+    if (desktop.matches) return;
+    toggle.setAttribute('aria-expanded', String(!isOpen()));
+  });
 
-document.querySelector('#menu-btn').onclick = () =>{
-    navbar.classList.toggle('active');
-    searchForm.classList.remove('active');
-    shoppingCart.classList.remove('active');
-    loginForm.classList.remove('active');
-}
+  navigation.addEventListener('click', (event) => {
+    if (event.target instanceof Element && event.target.closest('a[href]')) {
+      closeNavigation();
+    }
+  });
 
-window.onscroll = () =>{
-    searchForm.classList.remove('active');
-    shoppingCart.classList.remove('active');
-    loginForm.classList.remove('active');
-    navbar.classList.remove('active');
-}
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && isOpen() && !desktop.matches) {
+      closeNavigation(true);
+    }
+  });
 
-var swiper = new Swiper(".product-slider", {
-    loop:true,
-    spaceBetween: 20,
-    autoplay: {
-        delay: 7500,
-        disableOnInteraction: false,
-    },
-    centeredSlides: true,
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1020: {
-        slidesPerView: 3,
-      },
-    },
-});
+  document.addEventListener('click', (event) => {
+    if (isOpen() && event.target instanceof Node && !header.contains(event.target)) {
+      closeNavigation();
+    }
+  });
 
-var swiper = new Swiper(".review-slider", {
-    loop:true,
-    spaceBetween: 20,
-    autoplay: {
-        delay: 7500,
-        disableOnInteraction: false,
-    },
-    centeredSlides: true,
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1020: {
-        slidesPerView: 3,
-      },
-    },
-});
+  header.addEventListener('focusout', (event) => {
+    if (isOpen() && !header.contains(event.relatedTarget)) {
+      closeNavigation();
+    }
+  });
+
+  desktop.addEventListener('change', (event) => {
+    if (event.matches) {
+      closeNavigation();
+    } else if (navigation.contains(document.activeElement)) {
+      toggle.setAttribute('aria-expanded', 'true');
+    }
+  });
+})();

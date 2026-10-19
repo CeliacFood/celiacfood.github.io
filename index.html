@@ -1,514 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>پروژه فروشگاه مواد غذایی</title>
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#204f3c">
+  <title>سلیاک‌فود | معرفی نمایندگی تهران انجمن ایرانی سلیاک</title>
+  <meta name="description" content="با سلیاک‌فود و فعالیت‌های نمایندگی تهران انجمن ایرانی سلیاک آشنا شوید. معرفی محصولات بدون گلوتن، راه‌های ارتباط و هماهنگی مراجعه حضوری.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="canonical" href="https://celiacfood.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/vazirmatn-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fa_IR">
+  <meta property="og:site_name" content="سلیاک‌فود">
+  <meta property="og:title" content="سلیاک‌فود | نمایندگی تهران انجمن ایرانی سلیاک">
+  <meta property="og:description" content="آشنایی با ما، فعالیت‌ها و راه‌های ارتباط با نمایندگی تهران.">
+  <meta property="og:url" content="https://celiacfood.github.io/">
+  <meta property="og:image" content="https://celiacfood.github.io/assets/images/hero-table.webp">
+  <meta property="og:image:alt" content="تصویر نمایشی نان، آرد و کراکر برای معرفی گروه‌های غذایی">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "سلیاک‌فود، نمایندگی تهران انجمن ایرانی سلیاک",
+      "url": "https://celiacfood.github.io/",
+      "sameAs": ["https://t.me/CeliacFood", "https://www.instagram.com/celiacfood.ir/", "https://ble.ir/CeliacFood", "https://eitaa.com/CeliacFood"]
+    }
+  </script>
+  <script src="js/script.js" defer></script>
 </head>
-<body>
-    
-<!-- header section starts  -->
-
-<header class="header">
-
-    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> فروشگاه </a>
-
-    <nav class="navbar">
-        <a href="#home">خانه</a>
-        <a href="#features">ویژگی‌ها</a>
-        <a href="#products">محصولات</a>
-        <a href="#categories">دسته‌بندی‌ها</a>
-        <a href="#review">نظرات</a>
-        <a href="#blogs">بلاگ‌ها</a>
-    </nav>
-
-    <div class="icons">
-        <div class="fas fa-bars" id="menu-btn"></div>
-        <div class="fas fa-search" id="search-btn"></div>
-        <div class="fas fa-shopping-cart" id="cart-btn"></div>
-        <div class="fas fa-user" id="login-btn"></div>
+<body id="top">
+  <a class="skip-link" href="#main">رفتن به محتوای اصلی</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="سلیاک‌فود، ابتدای صفحه">
+        <img class="brand-mark" src="assets/favicon.svg" width="44" height="44" alt="">
+        <span class="brand-type"><strong>سلیاک‌فود</strong><small>نمایندگی تهران</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" hidden>فهرست</button>
+      <nav class="primary-nav" id="primary-nav" aria-label="فهرست اصلی">
+        <a href="#about">درباره ما</a>
+        <a href="#activities">فعالیت‌ها</a>
+        <a href="#food">گروه‌های غذایی</a>
+        <a href="#questions">پرسش‌های رایج</a>
+        <a class="header-contact" href="#contact">ارتباط با ما <span aria-hidden="true">↗</span></a>
+      </nav>
     </div>
-
-    <form action="" class="search-form">
-        <input type="search" id="search-box" placeholder="جستجو...">
-        <label for="search-box" class="fas fa-search"></label>
-    </form>
-
-    <div class="shopping-cart">
-        <div class="box">
-            <i class="fas fa-trash"></i>
-            <img src="image/cart-img-1.png" alt="">
-            <div class="content">
-                <h3>هندوانه</h3>
-                <span class="price">۴.۹۹ دلار</span>
-                <span class="quantity">تعداد : ۱</span>
-            </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="intro-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">انجمن ایرانی سلیاک</p>
+          <h1 id="intro-title">سلیاک‌فود،<br><span class="accent">نمایندگی تهران</span></h1>
+          <p class="hero-lead">برای آشنایی با محصولات بدون گلوتن و هماهنگی تهیه آن‌ها، در کنار افراد مبتلا به سلیاک و خانواده‌هایشان هستیم.</p>
+          <div class="hero-actions">
+            <a class="button" href="https://t.me/CeliacFood">دیدن کانال تلگرام <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#about">بیشتر با ما آشنا شوید</a>
+          </div>
+          <p class="hero-note">معرفی محصولات و تازه‌ترین اطلاع‌رسانی‌ها در کانال سلیاک‌فود</p>
         </div>
-        <div class="box">
-            <i class="fas fa-trash"></i>
-            <img src="image/cart-img-2.png" alt="">
-            <div class="content">
-                <h3>پیاز</h3>
-                <span class="price">۴.۹۹ دلار</span>
-                <span class="quantity">تعداد : ۱</span>
-            </div>
-        </div>
-        <div class="box">
-            <i class="fas fa-trash"></i>
-            <img src="image/cart-img-3.png" alt="">
-            <div class="content">
-                <h3>مرغ</h3>
-                <span class="price">۴.۹۹ دلار</span>
-                <span class="quantity">تعداد : ۱</span>
-            </div>
-        </div>
-        <div class="total"> جمع کل : ۱۹.۶۹ دلار </div>
-        <a href="#" class="btn">تسویه حساب</a>
+        <figure class="hero-visual">
+          <img src="assets/images/hero-table.webp" alt="تصویر نمایشی نان برش‌خورده، کاسه آرد و کراکر روی میز" width="1536" height="1024" fetchpriority="high">
+          <figcaption>تصویر نمایشی برای معرفی گروه‌های غذایی؛ محصول واقعی نیست.</figcaption>
+        </figure>
+      </div>
+    </section>
+    <div class="intro-strip">
+      <div class="container strip-grid">
+        <span class="strip-label">یک راه ارتباطی نزدیک‌تر</span>
+        <p>برای پرسیدن درباره محصولات یا هماهنگی مراجعه، مستقیم با نمایندگی در ارتباط باشید.</p>
+        <a class="text-link" href="https://t.me/CeliacFoodPV">گفت‌وگو در تلگرام <span aria-hidden="true">↗</span></a>
+      </div>
     </div>
-
-    <form action="" class="login-form">
-        <h3>ورود</h3>
-        <input type="email" placeholder="ایمیل شما" class="box">
-        <input type="password" placeholder="رمز عبور شما" class="box">
-        <p>رمز عبور را فراموش کرده‌اید؟ <a href="#">اینجا کلیک کنید</a></p>
-        <p>حساب کاربری ندارید؟ <a href="#">همین حالا بسازید</a></p>
-        <input type="submit" value="ورود" class="btn">
-    </form>
-
-</header>
-
-<!-- header section ends -->
-
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-    <div class="content">
-        <h3>محصولات <span>تازه و ارگانیک</span> برای شما</h3>
-        <p>ارگانیکا جایی است که نوآوران و علاقه‌مندان به تکنولوژی، محصولات جدید را پیش از ورود به بازار کشف می‌کنند.</p>
-        <a href="#" class="btn">خرید کنید</a>
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="section-heading"><p class="eyebrow">درباره ما</p><h2 id="about-title">آشنایی با نمایندگی تهران</h2></div>
+        <div class="about-copy">
+          <p>سلیاک‌فود، راه ارتباط با نمایندگی تهران انجمن ایرانی سلیاک است. کار ما معرفی محصولات بدون گلوتن، اطلاع‌رسانی درباره آن‌ها و هماهنگی تهیه محصولات برای افراد مبتلا به سلیاک و خانواده‌های آن‌هاست.</p>
+          <p>این صفحه برای آشنایی با ما و پیدا کردن راه ارتباط ساخته شده است. خبرهای محصولات و اطلاعات تازه را از کانال‌های سلیاک‌فود دنبال کنید.</p>
+          <div class="representative"><span class="representative-mark" aria-hidden="true">۱۳۹۰</span><div><strong>پیمانه صدری</strong><small>نماینده تهران؛ آغاز فعالیت در این نمایندگی از سال ۱۳۹۰</small></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="section activities-section" id="activities" aria-labelledby="activities-title">
+      <div class="container">
+        <div class="section-head"><div><p class="eyebrow">فعالیت‌های ما</p><h2 id="activities-title">از معرفی محصول تا هماهنگی تهیه</h2></div><p>پیش از مراجعه یا تصمیم به تهیه محصول، اطلاعات روز را از نمایندگی بپرسید.</p></div>
+        <div class="activity-grid">
+          <article class="activity"><span class="activity-number" aria-hidden="true">۰۱</span><h3>معرفی محصولات بدون گلوتن</h3><p>آشنایی با گروه‌های غذایی و محصولات ایرانی و وارداتی از طریق اطلاع‌رسانی‌های کانال سلیاک‌فود.</p><a class="text-link" href="https://t.me/CeliacFood">دیدن معرفی محصولات <span aria-hidden="true">↗</span></a></article>
+          <article class="activity"><span class="activity-number" aria-hidden="true">۰۲</span><h3>هماهنگی مراجعه و ارسال</h3><p>برای اطلاع از موجودی، شیوه ارسال به شهر خود و زمان مراجعه حضوری، پیش از اقدام با نمایندگی هماهنگ کنید.</p><a class="text-link" href="#contact">راه‌های ارتباط <span aria-hidden="true">←</span></a></article>
+          <article class="activity"><span class="activity-number" aria-hidden="true">۰۳</span><h3>کیک و شیرینی بدون گلوتن</h3><p>درباره امکان تهیه کیک، شیرینی و کیک تولد، ترکیبات و زمان آماده‌سازی از نمایندگی بپرسید.</p><a class="text-link" href="https://t.me/CeliacFoodPV">پرسیدن جزئیات <span aria-hidden="true">↗</span></a></article>
+        </div>
+      </div>
+    </section>
+    <section class="section food-section" id="food" aria-labelledby="food-title">
+      <div class="container">
+        <div class="section-head"><div><p class="eyebrow">آشنایی با محصولات</p><h2 id="food-title">برای بخش‌های مختلف سفره</h2></div><p>چند گروه از محصولات معرفی‌شده در سلیاک‌فود؛ برای اطلاعات هر محصول به کانال مراجعه کنید.</p></div>
+        <div class="food-grid">
+          <figure class="food-item"><img src="assets/images/demo-bread.webp" width="1254" height="1254" loading="lazy" decoding="async" alt="تصویر نمایشی نان برش‌خورده"><figcaption><h3>نان</h3><p>برای صبحانه و وعده‌های روزانه</p></figcaption></figure>
+          <figure class="food-item"><img src="assets/images/demo-flour.webp" width="1254" height="1254" loading="lazy" decoding="async" alt="تصویر نمایشی آرد در کاسه"><figcaption><h3>آرد و مواد پخت</h3><p>برای پخت‌وپز در خانه</p></figcaption></figure>
+          <figure class="food-item"><img src="assets/images/demo-pasta.webp" width="1254" height="1254" loading="lazy" decoding="async" alt="تصویر نمایشی پاستای پنه"><figcaption><h3>پاستا</h3><p>برای آماده کردن یک وعده غذا</p></figcaption></figure>
+          <figure class="food-item"><img src="assets/images/demo-biscuits.webp" width="1254" height="1254" loading="lazy" decoding="async" alt="تصویر نمایشی بیسکویت ساده"><figcaption><h3>بیسکویت و میان‌وعده</h3><p>برای میان‌وعده‌های روزانه</p></figcaption></figure>
+        </div>
+        <p class="image-note">این تصاویر نمایشی‌اند و بسته‌بندی، ترکیبات یا موجودی محصول خاصی را نشان نمی‌دهند. اطلاعات هر محصول و وضعیت تأیید آن را جداگانه از نمایندگی بپرسید.</p>
+      </div>
+    </section>
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow">ارتباط با سلیاک‌فود</p><h2 id="contact-title">از همین‌جا<br>با ما در ارتباط باشید.</h2>
+          <p>برای پرسیدن درباره محصولات، هماهنگی تهیه یا مراجعه حضوری، به نمایندگی پیام بدهید.</p>
+          <a class="button" href="https://t.me/CeliacFoodPV">پیام به نمایندگی در تلگرام <span aria-hidden="true">↗</span></a>
+          <div class="visit-note"><h3>مراجعه حضوری با هماهنگی قبلی</h3><p>تهران، محدوده میدان ولیعصر، خیابان کریمخان و نجات‌اللهی شمالی.</p><p>نشانی دقیق و زمان مراجعه را پیش از حرکت از نمایندگی دریافت کنید.</p></div>
+        </div>
+        <div class="contact-panel">
+          <h3>ما را دنبال کنید</h3><p>معرفی محصولات و اطلاع‌رسانی‌ها در کانال‌های سلیاک‌فود</p>
+          <div class="channel-list">
+            <a class="channel-link" href="https://t.me/CeliacFood"><span class="channel-name">کانال تلگرام</span><span class="channel-handle"><bdi dir="ltr">@CeliacFood</bdi> <span aria-hidden="true">↗</span></span></a>
+            <a class="channel-link" href="https://www.instagram.com/celiacfood.ir/"><span class="channel-name">اینستاگرام</span><span class="channel-handle"><bdi dir="ltr">@celiacfood.ir</bdi> <span aria-hidden="true">↗</span></span></a>
+            <a class="channel-link" href="https://ble.ir/CeliacFood"><span class="channel-name">کانال بله</span><span class="channel-handle"><bdi dir="ltr">CeliacFood</bdi> <span aria-hidden="true">↗</span></span></a>
+            <a class="channel-link" href="https://eitaa.com/CeliacFood"><span class="channel-name">کانال ایتا</span><span class="channel-handle"><bdi dir="ltr">CeliacFood</bdi> <span aria-hidden="true">↗</span></span></a>
+          </div>
+          <p>اگر یکی از پیام‌رسان‌ها در دسترس نیست، از راه‌های دیگر استفاده کنید.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="questions" aria-labelledby="questions-title">
+      <div class="container faq-grid">
+        <div class="section-heading"><p class="eyebrow">پرسش‌های رایج</p><h2 id="questions-title">پیش از ارتباط با ما</h2><p>چند پاسخ کوتاه برای شروع</p></div>
+        <div class="faq-list">
+          <details><summary>اطلاعات تازه محصولات را کجا ببینم؟</summary><p>معرفی محصولات و اطلاع‌رسانی‌ها در <a href="https://t.me/CeliacFood">کانال تلگرام سلیاک‌فود</a> منتشر می‌شود. موجودی و جزئیات هر محصول را پیش از تهیه از نمایندگی بپرسید.</p></details>
+          <details><summary>برای مراجعه حضوری چه کار کنم؟</summary><p>پیش از حرکت، از طریق <a href="https://t.me/CeliacFoodPV">پیام به نمایندگی</a> زمان مراجعه و نشانی دقیق را هماهنگ کنید.</p></details>
+          <details><summary>برای تهیه محصول در شهرهای دیگر چطور هماهنگ کنم؟</summary><p>نام محصول و شهر مقصد را به نمایندگی بگویید تا موجودی، امکان و روش ارسال، هزینه و زمان تحویل پیش از نهایی کردن درخواست مشخص شود.</p></details>
+          <details><summary>درباره کیک تولد و شیرینی از کجا بپرسم؟</summary><p>نوع کیک یا شیرینی و تاریخ موردنظرتان را در گفت‌وگو با نمایندگی مطرح کنید. امکان تهیه، ترکیبات و زمان آماده‌سازی باید پیش از ثبت درخواست مشخص شود.</p></details>
+          <details><summary>آیا از این سایت می‌توان خرید کرد؟</summary><p>این سایت برای معرفی نمایندگی و راه‌های ارتباط است. برای اطلاعات محصولات و هماهنگی تهیه آن‌ها، با نمایندگی در ارتباط باشید.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a class="brand" href="#top" aria-label="سلیاک‌فود، ابتدای صفحه"><img class="brand-mark" src="assets/favicon.svg" width="40" height="40" alt=""><span class="brand-type"><strong>سلیاک‌فود</strong><small>نمایندگی تهران انجمن ایرانی سلیاک</small></span></a>
+        <p>آشنایی با ما و راه‌های ارتباط با نمایندگی تهران</p>
+        <a class="footer-back" href="#top">بازگشت به بالا <span aria-hidden="true">↑</span></a>
+      </div>
+      <div class="footer-bottom"><p>این صفحه جایگزین مشاوره پزشکی یا بررسی اطلاعات هر محصول نیست.</p><p>این صفحه فرم ثبت‌نام یا درخواست اطلاعات شخصی ندارد. پیوندهای پیام‌رسان به سایت‌های دیگر می‌روند.</p></div>
     </div>
-
-</section>
-
-<!-- home section ends -->
-
-<!-- features section starts  -->
-
-<section class="features" id="features">
-
-    <h1 class="heading"> <span>ویژگی‌های</span> ما </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="image/feature-img-1.png" alt="">
-            <h3>تازه و ارگانیک</h3>
-            <p>سبزیجات و میوه‌های تازه با قیمت مناسب.</p>
-            <a href="#" class="btn">بیشتر بخوانید</a>
-        </div>
-
-        <div class="box">
-            <img src="image/feature-img-2.png" alt="">
-            <h3>ارسال رایگان</h3>
-            <p>ما همیشه ارسال سریع برای مشتریان خود داریم.</p>
-            <a href="#" class="btn">بیشتر بخوانید</a>
-        </div>
-
-        <div class="box">
-            <img src="image/feature-img-3.png" alt="">
-            <h3>پرداخت آسان</h3>
-            <p>پرداخت در سایت ما بسیار آسان است.</p>
-            <a href="#" class="btn">بیشتر بخوانید</a>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- features section ends -->
-
-<!-- products section starts  -->
-
-<section class="products" id="products">
-
-    <h1 class="heading"> <span>محصولات</span> ما </h1>
-
-    <div class="swiper product-slider">
-
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide box">
-                <img src="image/product-1.png" alt="">
-                <h3>پرتقال تازه</h3>
-                <div class="price"> ۴.۹۹ تا ۱۰.۹۹ دلار </div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <a href="#" class="btn">افزودن به سبد</a>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="image/product-2.png" alt="">
-                <h3>پیاز تازه</h3>
-                <div class="price"> ۴.۹۹ تا ۱۰.۹۹ دلار </div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <a href="#" class="btn">افزودن به سبد</a>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="image/product-3.png" alt="">
-                <h3>گوشت تازه</h3>
-                <div class="price"> ۴.۹۹ تا ۱۰.۹۹ دلار </div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <a href="#" class="btn">افزودن به سبد</a>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="image/product-4.png" alt="">
-                <h3>کلم تازه</h3>
-                <div class="price"> ۴.۹۹ تا ۱۰.۹۹ دلار </div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <a href="#" class="btn">افزودن به سبد</a>
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="swiper product-slider">
-
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide box">
-                <img src="image/product-5.png" alt="">
-                <h3>سیب‌زمینی تازه</h3>
-                <div class="price"> ۴.۹۹ تا ۱۰.۹۹ دلار </div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <a href="#" class="btn">افزودن به سبد</a>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="image/product-6.png" alt="">
-                <h3>آووکادوی تازه</h3>
-                <div class="price"> ۴.۹۹ تا ۱۰.۹۹ دلار </div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <a href="#" class="btn">افزودن به سبد</a>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="image/product-7.png" alt="">
-                <h3>هویج تازه</h3>
-                <div class="price"> ۴.۹۹ تا ۱۰.۹۹ دلار </div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <a href="#" class="btn">افزودن به سبد</a>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="image/product-8.png" alt="">
-                <h3>لیمو سبز</h3>
-                <div class="price"> ۴.۹۹ تا ۱۰.۹۹ دلار </div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <a href="#" class="btn">افزودن به سبد</a>
-            </div>
-
-        </div>
-
-    </div>
-
-
-</section>
-
-<!-- products section ends -->
-
-<!-- categories section starts  -->
-
-<section class="categories" id="categories">
-
-    <h1 class="heading"> <span>دسته‌بندی‌های</span> محصولات </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="image/cat-1.png" alt="">
-            <h3>سبزیجات</h3>
-            <p>تا ۴۵٪ تخفیف</p>
-            <a href="#" class="btn">خرید کنید</a>
-        </div>
-
-        <div class="box">
-            <img src="image/cat-2.png" alt="">
-            <h3>میوه تازه</h3>
-            <p>تا ۴۵٪ تخفیف</p>
-            <a href="#" class="btn">خرید کنید</a>
-        </div>
-
-        <div class="box">
-            <img src="image/cat-3.png" alt="">
-            <h3>محصولات لبنی</h3>
-            <p>تا ۴۵٪ تخفیف</p>
-            <a href="#" class="btn">خرید کنید</a>
-        </div>
-
-        <div class="box">
-            <img src="image/cat-4.png" alt="">
-            <h3>گوشت تازه</h3>
-            <p>تا ۴۵٪ تخفیف</p>
-            <a href="#" class="btn">خرید کنید</a>
-        </div>
-
-        <div class="box">
-            <img src="image/product-9.png" alt="">
-            <h3>غذاهای دریایی</h3>
-            <p>تا ۴۵٪ تخفیف</p>
-            <a href="#" class="btn">خرید کنید</a>
-        </div>
-
-        <div class="box">
-            <img src="image/product-10.jpg" alt="">
-            <h3>فست فود</h3>
-            <p>تا ۴۵٪ تخفیف</p>
-            <a href="#" class="btn">خرید کنید</a>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- categories section ends -->
-
-<!-- review section starts  -->
-
-<section class="review" id="review">
-
-    <h1 class="heading"> <span>نظرات</span> مشتریان </h1>
-
-    <div class="swiper review-slider">
-
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide box">
-                <img src="image/pic-1.png" alt="">
-                <p>وبسایت بسیار خوبی است. همه چیز عالی است. می‌توانید خرید خود را از اینجا انجام دهید.</p>
-                <h3>جان</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="image/pic-2.png" alt="">
-                <p>وبسایت بسیار خوبی است. همه چیز عالی است. می‌توانید خرید خود را از اینجا انجام دهید.</p>
-                <h3>جولیانا</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="image/pic-3.png" alt="">
-                <p>وبسایت بسیار خوبی است. همه چیز عالی است. می‌توانید خرید خود را از اینجا انجام دهید.</p>
-                <h3>جاناتان</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="image/pic-4.png" alt="">
-                <p>وبسایت بسیار خوبی است. همه چیز عالی است. می‌توانید خرید خود را از اینجا انجام دهید.</p>
-                <h3>اولیویا</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- review section ends -->
-
-<!-- blogs section starts  -->
-
-<section class="blogs" id="blogs">
-
-    <h1 class="heading"> <span>بلاگ‌های</span> ما </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="image/blog-1.jpg" alt="">
-            <div class="content">
-                <div class="icons">
-                    <a href="#"> <i class="fas fa-user"></i> توسط کاربر </a>
-                    <a href="#"> <i class="fas fa-calendar"></i> ۱ مهر ۱۴۰۰ </a>
-                </div>
-                <h3>میوه و سبزیجات تازه و ارگانیک</h3>
-                <p>ارگانیکا جایی است که نوآوران و علاقه‌مندان به تکنولوژی، محصولات جدید را پیش از ورود به بازار کشف می‌کنند.</p>
-                <a href="#" class="btn">بیشتر بخوانید</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/blog-2.jpg" alt="">
-            <div class="content">
-                <div class="icons">
-                    <a href="#"> <i class="fas fa-user"></i> توسط کاربر </a>
-                    <a href="#"> <i class="fas fa-calendar"></i> ۱ مهر ۱۴۰۰ </a>
-                </div>
-                <h3>میوه و سبزیجات تازه و ارگانیک</h3>
-                <p>ارگانیکا جایی است که نوآوران و علاقه‌مندان به تکنولوژی، محصولات جدید را پیش از ورود به بازار کشف می‌کنند.</p>
-                <a href="#" class="btn">بیشتر بخوانید</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/blog-3.jpg" alt="">
-            <div class="content">
-                <div class="icons">
-                    <a href="#"> <i class="fas fa-user"></i> توسط کاربر </a>
-                    <a href="#"> <i class="fas fa-calendar"></i> ۱ مهر ۱۴۰۰ </a>
-                </div>
-                <h3>میوه و سبزیجات تازه و ارگانیک</h3>
-                <p>ارگانیکا جایی است که نوآوران و علاقه‌مندان به تکنولوژی، محصولات جدید را پیش از ورود به بازار کشف می‌کنند.</p>
-                <a href="#" class="btn">بیشتر بخوانید</a>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- blogs section ends -->
-
-<!-- footer section starts  -->
-
-<section class="footer">
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3> فروشگاه <i class="fas fa-shopping-basket"></i> </h3>
-            <p>امیدواریم حال‌تون همیشه خوب باشه و سلامت باشید.</p>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <h3>اطلاعات تماس</h3>
-            <a href="#" class="links"> <i class="fas fa-phone"></i> +۹۱ ۸۸۵۳۴۵۵۷۶۵ </a>
-            <a href="#" class="links"> <i class="fas fa-phone"></i> +۹۱ ۹۱۴۰۰۲۶۴۸۴ </a>
-            <a href="#" class="links"> <i class="fas fa-envelope"></i> kapilyadav001144@gmail.com </a>
-            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> گریتِر نویدا، هند - ۲۰۱۳۰۶ </a>
-        </div>
-
-        <div class="box">
-            <h3>لینک‌های سریع</h3>
-            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> خانه </a>
-            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> ویژگی‌ها </a>
-            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> محصولات </a>
-            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> دسته‌بندی‌ها </a>
-        </div>
-
-        <div class="box">
-            <h3>خبرنامه</h3>
-            <p>برای دریافت آخرین به‌روزرسانی‌ها عضو شوید</p>
-            <input type="email" placeholder="ایمیل شما" class="email">
-            <input type="submit" value="عضویت" class="btn">
-            <img src="image/payment.png" class="payment-img" alt="">
-        </div>
-
-    </div>
-
-    <div class="credit"> ساخته شده توسط <span> Celiac Food </span> | همه حقوق محفوظ است </div>
-
-</section>
-
-<!-- footer section ends -->
-
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-
+  </footer>
 </body>
 </html>
